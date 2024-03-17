@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body class="whiteMode">
+    <div class="container">
+        <div class="inputArea">
+            <div class="encabezado">
+                <img class="logo" src="imagenes/Logo.svg" alt="Logo Alura">
+                <button class="botonModo" id="toggle-dark-mode-btn">Cambiar Modo🌜</button>
+
+            </div>
+            <textarea onclick="limpiarCaja()" id="input-texto" rows="5" cols="50">Ingrese el texto aquí...
+            </textarea>
+            <div class="botones">
+                <div class="leyenda">
+                    <label for="input-texto">🚨 Solo letras minúsculas y sin acentos.</label>
+                </div>
+                <div class="areaBotones">
+                    <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar!</button>
+                    <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar!</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="outputArea" id="outputArea">
+            <div class="text-outputArea" >
+              <h3>No se han encontrado mensajes aún</h3>
+              <p>Ingrese texto a encriptar o desencriptar.</p>    
+            </div>
+        </div>
+    </div>
+    <footer> 
+        2024 - Creado por Brandon Gutierrez 
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
